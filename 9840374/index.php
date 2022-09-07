@@ -1,7 +1,7 @@
 
  <?php
 
-$upDate = strtotime('17-02-2018');
+$upDate = strtotime('13-02-2021');
 
 $name =  "Paul Gibbs";
 
@@ -37,7 +37,61 @@ $hide = 'style="display: none;"';
 
 
 
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>16</td>
+        <td class=' gray'>07:00 - 15:30 Canary Wharf</td>
+        <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+        <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+        <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+        <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+        <td class=' red'>R</td>
+        <td class=' red'>R</td>
+
+
+      </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>17</td>
+        <td class=' red'>R</td>
+        <td class=' red'>R</td>
+        <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+        <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+        <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+        <td class=' gray'>15:30 - 23:15 Canary Wharf</td>
+        <td class=' gray'>15:00 - 23:00 Canary Wharf</td>
+
+
+      </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>18</td>
+        <td class=' gray'>15:30 - 00:30 Canary Wharf</td>
+        <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+        <td class=' red'>R</td>
+        <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+        <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+        <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+        <td class=' red'>R</td>
+      </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>19</td>
+        <td class=' red'>R</td>
+        <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+        <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+        <td class=' per'>08:30 - 16:30 Cross</td>
+        <td class=' red'>R</td>
+        <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+        <td class=' gray'>07:00 - 15:00 Canary Wharf</td>
+
+
+
+      </tr>
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>

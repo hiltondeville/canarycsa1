@@ -1,7 +1,7 @@
 
  <?php
 
-$upDate = strtotime('17-02-2018');
+$upDate = strtotime('13-02-2021');
 
 $name =  "T Mehmet";
 
@@ -33,6 +33,71 @@ $hide = 'style="display: none;"';
       <th>Friday</th>
       <th>Saturday</th>
       </thead>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>8</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+
+      </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>9</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+
+      </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>10</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class=' red'>R</td>
+
+      </tr>
+      <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <th>Week Ending</th>
+      <th>Roster No</th>
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+    </thead>
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>11</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' black'>12:15 - 19:30 North Greenwich</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>07:00 - 15:00 Canary Wharf</td>
+
+      </tr>
 
 
 

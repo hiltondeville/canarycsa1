@@ -1,8 +1,7 @@
 
  <?php
 
-$upDate = strtotime('10-02-2018');
-
+$upDate = strtotime('13-02-2021');
 $name =  "Ian Russell";
 
 $empno = "1695825";
@@ -36,7 +35,45 @@ $hide = 'style="display: none;"';
 
 
 
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>12</td>
+      <td class=' gray'>07:00 - 15:30 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' red'>R</td>
+      <td class=' red'>R</td>
+      </tr>
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>13</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>13:30 - 21:25 Canary Wharf</td>
+      <td class=' red'>R</td>
+
+      </tr>
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>14</td>
+      <td class=' red'>R</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+      <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+      <td class=' gray'>16:30 - 01:20 Canary Wharf</td>
+      <td class=' gray'>15:30 - 23:15 Canary Wharf</td>
+      <td class=' gray'>15:00 - 23:00 Canary Wharf</td>
+      </tr>
 
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 

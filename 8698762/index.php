@@ -3,9 +3,9 @@
 
 $upDate = strtotime('13-02-2021');
 
-$name =  "Barrie Pike";
+$name =  "Duncan Bostock";
 
-$empno = "9817802";
+$empno = "8698762";
 
 $now = time();
 
@@ -15,9 +15,10 @@ $hide = 'style="display: none;"';
 
 
  ?>
-
-
 <?php include('../css/header.php'); ?>
+
+
+
 
     <table class = "table table-bordered table-sm table-responsive m-t-3 m-b-3"> <!-- cellspacing='0' is important, must stay -->
 
@@ -38,18 +39,7 @@ $hide = 'style="display: none;"';
 
 
 
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
-
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>22</td>
-        <td class=' red'>R</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>15:00 - 23:00 North Greenwich</td>
-        <td class=' red'>R</td>
-      </tr>
+    
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>

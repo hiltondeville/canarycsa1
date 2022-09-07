@@ -1,11 +1,11 @@
 
  <?php
 
-$upDate = strtotime('16-01-2021');
+$upDate = strtotime('23-04-2022');
 
-$name =  "A Nokes";
+$name =  "Okusanya";
 
-$empno = "9837209";
+$empno = "9846510";
 
 $now = time();
 
@@ -15,13 +15,28 @@ $hide = 'style="display: none;"';
 
 
  ?>
-
-
 <?php include('../css/header.php'); ?>
+
+
+
+
     <table class = "table table-bordered table-sm table-responsive m-t-3 m-b-3"> <!-- cellspacing='0' is important, must stay -->
 
+      <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <th>Week Ending</th>
+      <th>Roster No</th>
+      <th>Sunday</th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      </thead>
 
 
+      
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>

@@ -1,4 +1,4 @@
-<thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+<thead class="thead-inverse<?php if($upDate < $removeOldDate) { echo " " . $hideHeader; } ?>">
 
 <th>Week Ending</th>
 <th>Roster No</th>
@@ -60,7 +60,7 @@
 
     <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
     <td class=''>4</td>
-    <td class=' gray'>07:00 - 15:30 Canary Wharf</td>
+    <td class=' gray'>07:30 - 15:30 Canary Wharf</td>
     <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
     <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
     <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
@@ -149,7 +149,7 @@
     <td class=' red'>R</td>
 
   </tr>
-  <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+  <thead class="thead-inverse<?php if($upDate < $removeOldDate) { echo " " . $hideHeader; } ?>">
 
   <th>Week Ending</th>
   <th>Roster No</th>
@@ -297,7 +297,7 @@
 
 
   </tr>
-  <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+  <thead class="thead-inverse<?php if($upDate < $removeOldDate) { echo " " . $hideHeader; } ?>">
 
   <th>Week Ending</th>
   <th>Roster No</th>
@@ -453,7 +453,7 @@
     <td class=' red'>R</td>
     <td class=' red'>R</td>
     </tr>
-  <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+  <thead class="thead-inverse<?php if($upDate < $removeOldDate) { echo " " . $hideHeader; } ?>">
 
   <th>Week Ending</th>
   <th>Roster No</th>

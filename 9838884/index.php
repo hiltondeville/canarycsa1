@@ -1,11 +1,11 @@
 
  <?php
 
-$upDate = strtotime('13-02-2021');
+$upDate = strtotime('18-09-2021');
 
-$name =  "Tracey Hayward";
+$name =  "Sam Akande";
 
-$empno = "9815036";
+$empno = "9838884";
 
 $now = time();
 
@@ -15,9 +15,10 @@ $hide = 'style="display: none;"';
 
 
  ?>
-
-
 <?php include('../css/header.php'); ?>
+
+
+
 
     <table class = "table table-bordered table-sm table-responsive m-t-3 m-b-3"> <!-- cellspacing='0' is important, must stay -->
 
@@ -34,8 +35,61 @@ $hide = 'style="display: none;"';
       <th>Saturday</th>
       </thead>
 
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>26</td>
+        <td class=' red'>R</td>
+        <td class=' black'>05:00 - 12:15 North Greenwich</td>
+        <td class=' black'>05:00 - 12:15 North Greenwich</td>
+        <td class=' black'>05:00 - 12:15 North Greenwich</td>
+        <td class=' black'>05:00 - 12:15 North Greenwich</td>
+        <td class=' black'>05:00 - 12:15 North Greenwich</td>
+        <td class=' red'>R</td>
+      </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>27</td>
+          <td class=' black'>07:00 - 15:30 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' red'>R</td>
 
 
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>28</td>
+          <td class=' red'>R</td>
+          <td class=' red'>R</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>15:30 - 23:15 North Greenwich</td>
+          <td class=' black'>15:00 - 23:00 North Greenwich</td>
+
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>29</td>
+          <td class=' black'>15:30 - 00:30 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' red'>R</td>
+          <td class=' red'>R</td>
+          <td class=' black'>09:00 - 17:00 North Greenwich</td>
+          <td class=' black'>08:30 - 15:30 North Greenwich</td>
+          <td class=' black'>07:00 - 15:00 North Greenwich</td>
+
+
+
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
           <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
           <td class=''>30</td>
@@ -102,61 +156,67 @@ $hide = 'style="display: none;"';
 
 
         </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
-
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>34</td>
-        <td class=' black'>15:30 - 00:30 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' red'>R</td>
-        <td class=' red'>R</td>
-        <td class=' black'>05:00 - 12:15 North Greenwich</td>
-        <td class=' black'>07:00 - 15:00 North Greenwich</td>
-
-
-      </tr>
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
-
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>35</td>
-        <td class=' black'>07:00 - 15:30 North Greenwich</td>
-        <td class=' black'>05:00 - 12:15 North Greenwich</td>
-        <td class=' black'>05:00 - 12:15 North Greenwich</td>
-        <td class=' black'>05:00 - 12:15 North Greenwich</td>
-        <td class=' black'>05:00 - 12:15 North Greenwich</td>
-        <td class=' red'>R</td>
-        <td class=' red'>R</td>
-
-      </tr>
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
-
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>36</td>
-        <td class=' red'>R</td>
-        <td class=' black'>12:15 - 19:30 North Greenwich</td>
-        <td class=' black'>12:15 - 19:30 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>16:30 - 01:20 North Greenwich</td>
-        <td class=' black'>15:30 - 23:15 North Greenwich</td>
-        <td class=' red'>R</td>
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>34</td>
+          <td class=' black'>15:30 - 00:30 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' red'>R</td>
+          <td class=' red'>R</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>07:00 - 15:00 North Greenwich</td>
 
 
-      </tr>
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>37</td>
-        <td class=' red'>R</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>35</td>
+          <td class=' black'>07:00 - 15:30 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' black'>05:00 - 12:15 North Greenwich</td>
+          <td class=' red'>R</td>
+          <td class=' red'>R</td>
 
-      </tr>
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>36</td>
+          <td class=' red'>R</td>
+          <td class=' black'>12:15 - 19:30 North Greenwich</td>
+          <td class=' black'>12:15 - 19:30 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>16:30 - 01:20 North Greenwich</td>
+          <td class=' black'>15:30 - 23:15 North Greenwich</td>
+          <td class=' red'>R</td>
+
+
+        </tr>
+        <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+          <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+          <td class=''>37</td>
+          <td class=' red'>R</td>
+          <td class='bg-primary'>COVER WEEK</td>
+          <td class='bg-primary'>COVER WEEK</td>
+          <td class='bg-primary'>COVER WEEK</td>
+          <td class='bg-primary'>COVER WEEK</td>
+          <td class='bg-primary'>COVER WEEK</td>
+          <td class='bg-primary'>COVER WEEK</td>
+
+        </tr>
+
+
+
+
+
+
+
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>

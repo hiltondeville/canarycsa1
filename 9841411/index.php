@@ -1,7 +1,7 @@
 
  <?php
 
-$upDate = strtotime('20-07-2019');
+$upDate = strtotime('13-02-2021');
 
 $name =  "Alfie Arce
 ";
@@ -39,33 +39,7 @@ $hide = 'style="display: none;"';
 
 
 
-    
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>24</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-
-      </tr>
-      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
-
-        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>25</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class=' red'>R</td>
-
-      </tr>
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>

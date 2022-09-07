@@ -1,7 +1,7 @@
 
  <?php
 
-$upDate = strtotime('17-02-2018');
+$upDate = strtotime('13-02-2021');
 
 $name =  "James Codd";
 
@@ -36,6 +36,61 @@ $hide = 'style="display: none;"';
       </thead>
 
 
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>10</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class='bg-primary'>COVER WEEK</td>
+        <td class=' red'>R</td>
+
+      </tr>
+  
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>11</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' black'>12:15 - 19:30 North Greenwich</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>07:00 - 15:00 Canary Wharf</td>
+
+      </tr>
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>12</td>
+      <td class=' gray'>07:00 - 15:30 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' gray'>05:10 - 12:15 Canary Wharf</td>
+      <td class=' red'>R</td>
+      <td class=' red'>R</td>
+      </tr>
+
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+      <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+      <td class=''>13</td>
+      <td class=' red'>R</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>12:15 - 20:15 Canary Wharf</td>
+      <td class=' gray'>13:30 - 21:25 Canary Wharf</td>
+      <td class=' red'>R</td>
+
+      </tr>
 
 
 
