@@ -1,11 +1,11 @@
 
  <?php
 
-$upDate = strtotime('03-07-2021');
+$upDate = strtotime('21-01-2023');
 
-$name =  "Annabelle Dombelle";
+$name =  "J Hamilton Mills";
 
-$empno = "9846782";
+$empno = "9846108";
 
 $now = time();
 
@@ -15,11 +15,9 @@ $hide = 'style="display: none;"';
 
 
  ?>
+
+
 <?php include('../css/header.php'); ?>
-
-
-
-
     <table class = "table table-bordered table-sm table-responsive m-t-3 m-b-3"> <!-- cellspacing='0' is important, must stay -->
 
       <thead class="thead-dark" <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
@@ -34,32 +32,38 @@ $hide = 'style="display: none;"';
       <th>Friday</th>
       <th>Saturday</th>
       </thead>
-
-
-
-
-
-
-
-
+    
       <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
 
         <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
-        <td class=''>40</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
-        <td class='bg-primary'>COVER WEEK</td>
+        <td class=''>37</td>
         <td class=' red'>R</td>
-
+        <td class=' black'>17:00 - 01:20 North Greenwich</td>
+        <td class=' black'>17:00 - 01:20 North Greenwich</td>
+        <td class=' black'>17:00 - 01:20 North Greenwich</td>
+        <td class=' red'>R</td>
+        <td class=' black'>05:00 - 12:45 North Greenwich</td>
+        <td class=' black'>07:00 - 15:05 North Greenwich</td>
 
       </tr>
+      <tr <?php if($upDate < $removeOldDate) { echo $hide; } ?>>
+
+        <td class='table-active'><?php $upDate += 604800; echo date('d-m-Y', $upDate); ?></td>
+        <td class=''>38</td>
+        <td class=' black'>07:00 - 15:30 North Greenwich</td>
+        <td class=' black'>05:00 - 12:30 North Greenwich</td>
+        <td class=' black'>05:00 - 12:30 North Greenwich</td>
+        <td class=' black'>05:00 - 12:30 North Greenwich</td>
+        <td class=' black'>05:00 - 12:30 North Greenwich</td>
+        <td class=' red'>R</td>
+        <td class=' red'>R</td>
+
+      </tr>
+     
         <?php
 
 
-        for ($i = 0; $i < 4; $i++) {
+        for ($i = 0; $i < 5; $i++) {
           # code...
 
           include '../css/inc.php';
